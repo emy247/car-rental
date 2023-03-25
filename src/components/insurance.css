@@ -1,0 +1,120 @@
+.insurance{
+    position:relative;
+    width:100%;
+    height:500px;
+    background-color:rgb(245, 243, 243);
+}
+
+.quote{
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    font-family: 'Kanit', sans-serif;
+    font-size:50px;
+    font-weight:600;
+    left:10%;
+    top:20%;
+}
+
+.piece{
+    color:rgb(83, 96, 214);
+}
+
+.insurance-description{
+    position:absolute;
+    font-size:18px;
+    top:40%;
+    width:40%;
+    left:10%;
+}
+
+.cover{
+    position:absolute;
+    height:320px;
+    width:700px;
+    right:5%;
+    top:15%;
+    background-color:rgba(255, 255, 255, 0.603);
+    border:0px;
+    color:rgb(121, 121, 121);
+    box-shadow:1px 0px 6px 1px rgb(212, 212, 212);
+    
+}
+
+.what-is{
+    font-family: 'Kanit', sans-serif;
+    margin-left:70px;
+    color:black;
+}
+
+.no{
+    font-family: 'Kanit', sans-serif;
+    color:black;
+}
+.full{
+    font-family: 'Kanit', sans-serif;
+    color:black;
+}
+
+.line{
+    position:absolute;
+    width:100%;
+    height:1px;
+    background-color:black;
+    top:25%;
+
+}
+.what{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    top:10%;
+    left:10%;
+    gap:50px;
+    
+    
+}
+
+.no-insurance{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    top:10%;
+    left:55%;
+    gap:50px;
+    
+    text-align:center;
+}
+
+.full-insurance{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    top:5%;
+    left:80%;
+    gap:50px;
+    
+    text-align:center;
+    border:solid 0px;
+    border-radius:10px;
+    margin-right:30px;
+    height:90%;
+}
+
+.insurance-price{
+    position:absolute;
+    top:7%;
+    right:6%;
+    font-size:23px;
+}
+
+.cancellation{
+    position:absolute;
+    bottom:14%;
+    right:6%;
+    font-size:15px;
+    margin-top:15px;
+    color:rgb(126, 126, 165);
+    font-weight:600;
+}

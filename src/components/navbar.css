@@ -1,0 +1,141 @@
+.navbar{
+    width:100%;
+    height:6em;
+    border-bottom:2px solid white;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    z-index:1;
+}
+
+.website-title{
+    position:absolute;
+    height:63px;
+    width:270px;
+    top:20%;
+    left:40%;
+    text-align:center;
+    font-size:28px;
+    font-weight:bolder;
+    
+}
+
+.stars-up{
+    height:25px;
+    width:auto;
+    align-content:center;
+}
+.menu{
+    position:fixed;
+    height:2em;
+    width:3em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-left:2em;
+    cursor:pointer;
+}
+
+.menu.pressed{
+ height:1.9em;
+ width:2.8em;
+ opacity:0.8;
+ transition:all 0.1s ease;
+
+}
+
+.menu-bar{
+    
+    width:90%;
+    height:0.25em;
+    background-color:rgb(255, 255, 255);
+    border-radius:1em;
+    box-shadow:0px -1px 3px 1px rgb(81, 80, 141);
+   
+
+}
+
+.dropdown-menu{
+    position:absolute;
+    height:auto;
+    width:8.5em;
+    top:4em;
+    left:1em;
+    background-color:rgba(83, 96, 214, 0.493);
+    text-align:center;
+    font-size:25px;
+    position:fixed;
+    
+
+}
+.dropdown-menu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+  transition: all 1s ease;
+  border-style: solid 0;
+  border-radius:10px;
+  
+}
+
+.dropdown-menu.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0);
+  transition: all 1s ease;
+  
+}
+
+.menu-item{
+    margin-bottom:18px;
+    margin-top:12px;
+    color:white;
+    text-decoration:none;
+
+}
+
+menu-item:focus, .menu-item:hover{
+    font-weight:bold;
+    text-underline-offset: 0;
+    cursor:pointer
+}
+
+a:link { text-decoration: none!important; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.fa-volume-up{
+    position:absolute;
+    font-size:25px;
+    margin-left:6%;
+    position:fixed;
+    text-shadow: -1px 1px 6px rgb(81, 80, 141);
+}
+
+
+
+.fa-volume-mute{
+    position:absolute;
+    font-size:25px;
+    margin-left:6%;
+    text-shadow: -1px 1px 6px rgb(81, 80, 141);
+    position:fixed;
+}
+
+.fa-volume-mute:hover{
+    font-size:23px;
+    cursor: pointer;
+    text-shadow: -1px 1px 6px rgb(81, 80, 141);
+    
+}
+
+.fa-volume-up:hover{
+    font-size:23px;
+    cursor: pointer;
+    text-shadow: -1px 1px 6px rgb(81, 80, 141);
+}

@@ -1,0 +1,177 @@
+
+.models{
+    position:relative;
+    text-align:center;
+    height:650px;
+    font-family: 'Kanit', sans-serif;
+    margin-top:60px;
+}
+
+.selectCar{
+    position:absolute;
+    top:50px;
+    left: 16%;
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    
+}
+
+.btn{
+    background-color:rgb(233, 233, 233);
+    color:rgb(0, 0, 0);
+    width:250px;
+    height:40px;
+    border:solid 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight:500;
+    font-size:20px;
+}
+
+.btn:focus, .btn:hover {
+    
+    background-color:rgb(83, 96, 214);
+    transition: all 0.3s ease;
+    color:white;
+    cursor:pointer;
+  }
+
+
+.products{
+  box-sizing: border-box;
+  color: black;
+  text-align: center;
+  display: flex;
+  max-width: 500px;
+  height:550px; 
+  margin: 0 auto;
+  flex-wrap: wrap
+
+}
+.card{
+    box-shadow:0px 1px 0px 0px black;
+}
+
+.card_image{
+    height:325px;
+    width:500px;
+    box-shadow:0px 1px 0px 0px black;
+}
+.card_image img{
+    
+    width:100%;
+    height:auto;
+    
+    
+}
+
+.description{
+    font-family: 'MonteCarlo', cursive;
+    height:40px;
+    font-size:30px;
+}
+
+.reserve-now{
+    width:200px;
+    height:40px;
+    text-align:center;
+    background-color: rgb(83, 96, 214);
+    color:white; 
+    border:solid 0;
+    font-size:22px;
+    padding:3px;
+    font-weight:600;
+    font-family: 'Kanit', sans-serif;
+}
+
+.reserve-now:hover{
+    background-color: rgb(125, 138, 253);
+}
+
+
+.price-section{
+ width:220px;
+ height:40px;
+ margin-bottom:15px;
+ text-align:center;
+ background-color: rgb(83, 96, 214);
+ color:white;
+}
+
+.price{
+    font-size:27px;
+    padding:3px;
+    font-family: 'Rowdies', cursive;
+}
+
+.stats{
+    position:absolute;
+    top:50px;
+    right:15%;
+}
+
+.power-bar{
+    
+    height:8px;
+    background-color:rgb(83, 96, 214);
+    margin-bottom:20px;
+    border-radius:5px;
+    animation: load-bar-power 1s ease-in-out forwards;
+}
+
+.power-bar-empty{
+    width:220px;
+    height:8px;
+    background-color:rgb(204, 204, 224);
+    margin-bottom:20px;
+    border-radius:5px;   
+}
+
+
+.comfort-bar{
+    width:220px;
+    height:8px;
+    background-color:rgb(83, 96, 214);
+    margin-bottom:20px;
+    border-radius:5px;
+    animation: load-bar-comfort 1s ease-in-out forwards;
+}
+.comfort-bar-empty{
+    width:220px;
+    height:8px;
+    background-color:rgb(204, 204, 224);
+    margin-bottom:20px;
+    border-radius:5px;   
+}
+
+.trunk-bar{  
+    width:220px;
+    height:8px;
+    background-color:rgb(83, 96, 214);
+    margin-bottom:20px;
+    border-radius:5px;
+    animation: load-bar-trunk 1s ease-in-out forwards;
+}
+
+.trunk-bar-empty{
+    width:220px;
+    height:8px;
+    background-color:rgb(204, 204, 224);
+    margin-bottom:20px;
+    border-radius:5px;   
+}
+
+@keyframes load-bar-power {
+    0% { width: 0% }
+    100% { width:var(--load-bar-width-power); }
+  }
+
+@keyframes load-bar-comfort {
+    0% { width: 0% }
+    100% { width:var(--load-bar-width-comfort); }
+  } 
+@keyframes load-bar-trunk {
+    0% { width: 0% }
+    100% { width:var(--load-bar-width-trunk); }
+  }   
