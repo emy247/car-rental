@@ -9,7 +9,6 @@ import Explore from './explore';
  const LandingPage = () => {
   
   return (
-
     
     <>
         <div className="landingpage">

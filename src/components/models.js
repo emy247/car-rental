@@ -119,28 +119,27 @@ const Models = () => {
         <>
         <div className="models" id="Models">
 
-          <div className="selectCar">
+            <div className="select-cars">         
+              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0], setSelectedBrand("Audi A6"))}>Audi A6</button>
+              <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>VW Golf 7</button>
+              <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>Toyota Corolla</button>
+              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
+              <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>vw golf</button>
+              <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>bmw</button>
+              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
+              <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>vw golf</button>
+              <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>bmw</button>
+              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>            
+            </div>
+            
           
-            <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0], setSelectedBrand("Audi A6"))}>Audi A6</button>
-            <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>VW Golf 7</button>
-            <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>Toyota Corolla</button>
-            <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
-            <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>vw golf</button>
-            <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>bmw</button>
-            <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
-            <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>vw golf</button>
-            <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>bmw</button>
-            <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
-            
-          </div>
-            
-            <div className="products">
-                {listCars}
-                
+            <div>{listCars}</div>
 
+            <div className="car-stats-info">
+              {listStats}
+              {listInfo} 
             </div> 
-            {listStats}
-            {listInfo} 
+
         </div>
         
        

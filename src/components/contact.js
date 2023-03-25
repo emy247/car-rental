@@ -33,9 +33,9 @@ const Contact = () => {
        <span>Where to find us</span>
       </div>
 
-      <div>
+      
       <iframe className="map-location" src="https://my.atlistmaps.com/map/359f84b4-31a9-4888-a4fc-3750df5f088b?share=true" allow="geolocation 'self' https://my.atlistmaps.com" width="38%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
-      </div>
+      
     </div>
       
   

@@ -1,24 +1,20 @@
 import './App.css';
-import LandingPage from "./components/landingpage.js";
-import Models from "./components/models.js";
-import Contact from "./components/contact";
-import Insurance from "./components/insurance.js";
-import Faq from "./components/faq.js";
-
+import Home from "./components/home";
+import About from "./components/about";
+import { Route, Routes } from "react-router-dom";
 
 
 function App() {
 
-  
-
   return (
     <div className="App">
-      <LandingPage />
-      <Models />
-      <Insurance />
-      <Faq />
-      <Contact />
-      
+
+    <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+     </Routes>     
+     
+
     </div>
   );
 }

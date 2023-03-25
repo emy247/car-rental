@@ -2,7 +2,6 @@ import './navbar.css';
 import {useState,useRef} from 'react';
 import Stars from '../media/stars.png'
 import BookNow from './bookNow';
-import {BrowserRouter} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import Sound from "../media/bg_music.mp3";
 
@@ -27,7 +26,7 @@ const Navbar = () => {
   const [isOpen,setIsOpen]=useState(false);
 
   return (
-    <BrowserRouter>
+    
     <div className="navbar">
 
         <div className={`menu ${open? 'pressed':''}`} onClick={()=>{setOpen(!open)}}>
@@ -37,8 +36,10 @@ const Navbar = () => {
         </div>   
         
         <div className={`dropdown-menu ${open?'active':'inactive'}`}>
-            
+   
+              <Link className="about-link" to="/about">
               <div className="menu-item" tabIndex="0">About</div>
+              </Link>  
 
               <Link to="#Models" smooth>
               <div className="menu-item" tabIndex="0">Models</div></Link>
@@ -48,8 +49,9 @@ const Navbar = () => {
 
               <Link to="#Contact" smooth>
               <div className="menu-item" tabIndex="0" >Contact</div></Link>
-    
-            
+
+              
+       
         </div>
         {isPlaying ? (
           <i className='fas fa-volume-up'  onClick={handleStopButtonClick}></i> 
@@ -64,7 +66,7 @@ const Navbar = () => {
         
     </div>
 
-    </BrowserRouter>
+    
   )
 }
 
