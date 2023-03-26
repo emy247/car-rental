@@ -8,8 +8,9 @@
     gap: 3rem;
     align-items: center;
     text-align: center;
-    padding: 10rem;
     margin: 0 auto;
+    padding-top:10rem;
+    padding-bottom:10rem;
    
 }
 
@@ -24,48 +25,28 @@
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    text-align: center;
-    align-items: center; 
-    margin-left:10em;
-   
+    align-items: right center;
+   padding-left:23rem;
+    
 }
 
-@media (max-width: 1150px) {
-    .models{ 
-     grid-template-columns: 1fr 1fr;   
-     width: fit-content;
-     padding:4em  10em;
-     
-     
-     } 
-     .car-stats-info{
-        display:flex;
-        flex-direction:row;
-        gap:12em;   
-        grid-column: 1 / -1; 
-        margin-left:0.5em;     
-     }
-     .stats{
-        box-sizing:border-box;
-        padding-left:1.5em;
-        
-     }
-     table{
-        margin:0em;
-     }
- }
-   
+.car-select{
+
+  text-align: center;
+  align-items: center; 
 
 
+}
 .card{
-    width:100%;
+    width:30rem;
+    margin:0 auto;   
 }
-
 .btn{
+    
     background-color:rgb(233, 233, 233);
     color:rgb(0, 0, 0);
-    width:250px;
-    height:40px;
+    width:15rem;
+    height:3rem;
     border:solid 0;
     font-family: 'Kanit', sans-serif;
     font-weight:500;
@@ -85,7 +66,6 @@
   box-sizing: border-box;
   color: black;
   text-align: center;
-  
 
 }
 
@@ -95,20 +75,20 @@
 }
 .card_image img{
     
-    width:500px;
+    width:30rem;
     height:auto;
     
 }
 
 .description{
     font-family: 'MonteCarlo', cursive;
-    height:40px;
+    height:3rem;
     font-size:30px;
 }
 
 .reserve-now{
-    width:200px;
-    height:40px;
+    width:10rem;
+    height:3rem;
     text-align:center;
     background-color: rgb(83, 96, 214);
     color:white; 
@@ -125,16 +105,16 @@
 
 
 .stats{
-    width:220px;
-    text-align:center;
     
+    width:17rem;
+    text-align:center;
 }
 
 
 
 .price-section{
  width:100%;
- height:40px;
+ height:3rem;
  margin-bottom:15px;
  text-align:center;
  background-color: rgb(83, 96, 214);
@@ -199,14 +179,13 @@
 }
 
 table {
-    margin-top:2em;
-    margin-left:1.4em;
+    margin-top:2rem;
     border-collapse: collapse; 
     text-align:center;
     font-family: 'Kanit', sans-serif;
     font-weight:500;
     font-size:13px;
-    width:250px;
+    width:17rem;
     flex-direction:column;
     background-color:rgb(233, 233, 233);
     color:rgb(0, 0, 0);
@@ -265,4 +244,83 @@ table {
   }   
 
 
-  
+  @media (max-width: 1300px) {
+    .models{ 
+     grid-template-columns: 1fr 1fr;   
+     width: fit-content; 
+     
+     }
+     .select-cars{
+        width:15rem;
+         margin-left:0;
+         padding-left:1rem;
+    } 
+
+    .card{
+      padding-right:2rem;
+    }
+     .car-stats-info{
+        display:flex;
+        flex-direction:row;
+        gap:12rem;   
+        grid-column: 1 / -1; 
+        margin-left:7rem;     
+     }
+     .stats{
+        margin-top:2rem;
+     }
+     table{
+        margin-left:-1rem;
+     }
+} 
+
+@media (max-width: 768px) {
+    .models{   
+     box-sizing:border-box;
+     grid-template-columns: 1fr ;   
+     align-items:center;
+     text-align:center;
+     
+     }
+     .select-cars{
+         width:20rem;
+         align-items:center;
+        text-align:center;
+    } 
+     .card{
+      width:20rem;
+      align-items: center;
+     }
+
+     .card img{
+      width:20rem;
+
+     }
+     
+     .description{
+      font-size:20px;
+      margin:0 auto;
+     }
+     .car-stats-info{
+     
+        width:20rem;
+        display:flex;
+        flex-direction:column;
+        gap:3rem;   
+        grid-column: 1 / -1; 
+        margin-left:0.5rem;  
+        padding-left:2.5rem; 
+     }
+     .price{
+      font-size:20px;
+     }
+     .stats{
+        
+        margin-top:2rem;
+     }
+     table{
+        
+        width:15rem;
+        margin-left:-1rem;
+     }
+} 

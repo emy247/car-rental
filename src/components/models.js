@@ -1,5 +1,4 @@
 import './models.css';
-import './table.css';
 import React from 'react'
 import cars from './models_data';
 import informations from './models_info';
@@ -133,7 +132,7 @@ const Models = () => {
             </div>
             
           
-            <div>{listCars}</div>
+            <div className="car-select">{listCars}</div>
 
             <div className="car-stats-info">
               {listStats}

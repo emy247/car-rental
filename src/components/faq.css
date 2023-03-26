@@ -1,24 +1,21 @@
 .faqs{
     position:relative;
     width:100%;
-    height:700px;
+    height:40em;
 }
 
 .supra {
-    position:absolute;
-    top:20%;
-    right:0%;
-    height:500px;
+     
+    height:25em;
     width:auto;
 
 }
 
-.frequently{
+.frequently-asked{
     position:absolute;
     font-family: 'Kanit', sans-serif;
     font-size:50px;
     font-weight:600;
-    margin-left:410px;
     top:20%;
     text-align:center;
     display:flex;
@@ -30,7 +27,6 @@
     font-family: 'Kanit', sans-serif;
     font-size:50px;
     top:10%;
-    margin-left:800px;
     font-weight:600;
 }
 
@@ -44,8 +40,8 @@
 .questions{
     position:absolute;
     height:350px;
-    width:700px;
     box-shadow:1px 0px 6px 1px rgb(212, 212, 212);
     top:40%;
     left:27%;
 }
+
