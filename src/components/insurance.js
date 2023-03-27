@@ -17,6 +17,7 @@ const Insurance = () => {
        </div>
 
        <div className="cover-total">
+
         <div className="cover">
               
               <div className="what">
@@ -39,11 +40,17 @@ const Insurance = () => {
                   <span><i class='fa fa-check-circle' style={{color:'rgb(83, 96, 214)'}}></i></span>
                   <span><i class='fa fa-check-circle' style={{color:'rgb(83, 96, 214)'}}></i></span>
               </div>
-             
           </div>
+
+          
           <div className="price-cancellation">
+            <span className="cancellation">FREE CANCELLATION </span>
             <span className="insurance-price">Total price:<span style={{color:"rgb(83, 96, 214)"}}> $18</span></span>
-            <span className="cancellation">FREE CANCELLATION </span></div>
+            
+          </div> 
+
+         
+
         </div>   
       
     </div>

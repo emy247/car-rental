@@ -83,8 +83,6 @@ let insurancePrice=0;
   };
   
    
-  
-
  
 
   return ReactDom.createPortal(
@@ -117,7 +115,6 @@ let insurancePrice=0;
             <input className="date-style" id="date-picker-end" type="date" onChange={(e)=>setEndDate(e.target.value)}/> 
             <input className="time" id="time-picker-end" type="time" onChange={(e)=>setEndHour(e.target.value)}/>
           </div>
-            
       
       </div>
       

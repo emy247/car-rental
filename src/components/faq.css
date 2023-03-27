@@ -1,36 +1,52 @@
-.faqs{
-    position:relative;
-    width:100%;
-    height:40em;
-}
-
-.supra {
-     
-    height:25em;
-    width:auto;
-
-}
-
-.frequently-asked{
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:1rem 0;
+  }
+  
+  .faqs {
+    
+    align-items:center;
+    text-align:center;
+    z-index:1;
+    margin:2em auto;
+    
+  }
+  
+  .supra-wrapper {
     position:absolute;
+    margin-top:10rem;
+    right:0%;
+    z-index:-1;
+    width:20rem;
+    
+  }
+  
+  .supra {
+    max-width: 100%;
+    height: auto;
+  }
+
+.faq-title{
+    
     font-family: 'Kanit', sans-serif;
-    font-size:50px;
+    font-size:40px;
     font-weight:600;
-    top:20%;
+}
+
+.frequently-asked-questions{
+    
+    font-family: 'Kanit', sans-serif;
+    font-size:40px;
+    font-weight:600;
     text-align:center;
     display:flex;
     flex-direction: column;
 }
 
-.faq{
-    position:absolute;
-    font-family: 'Kanit', sans-serif;
-    font-size:50px;
-    top:10%;
-    font-weight:600;
-}
-
 .faq-description{
+    
     font-family: 'Kanit', sans-serif;
     font-size:18px;
     color:rgb(121, 121, 121);
@@ -38,10 +54,71 @@
 }
 
 .questions{
-    position:absolute;
-    height:350px;
-    box-shadow:1px 0px 6px 1px rgb(212, 212, 212);
-    top:40%;
-    left:27%;
+    
+    flex-direction: column;
+    text-align:left;
+    margin-top:2rem;
+    box-shadow:0px 6px 13px 4px rgb(194, 194, 194);
+    background-color:white;
+    transition: height 0.3s ease;
+   
 }
 
+
+@media(max-width:1300px)
+
+{  .faq{
+    flex-direction:column;
+    text-align:center;
+}
+    .faqs{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:2rem 2rem;
+    } 
+    
+}
+
+
+.question{
+    font-family: 'Kanit', sans-serif;
+    padding:1rem 5rem;
+    font-size:23px;
+    cursor:pointer;
+    border:solid 1px rgba(156, 156, 156, 0.267);
+    
+}
+.question.inactive{
+   
+ 
+}
+.question.active{ 
+    background-color:rgb(83, 96, 214);   
+    color:white;
+    transition:0.3s ease;
+}
+
+.answer{ 
+    font-family: 'Kanit', sans-serif;
+    color:rgb(73, 73, 73);
+    padding:1rem 5rem;
+    font-size:16px;
+    width:40rem;}
+
+.answer.inactive{
+    
+    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    padding: 0 4.5rem;
+    }
+
+.answer.active{
+    display:block; 
+    max-height: 10rem;
+    padding: 2rem 4.5rem;
+    transition: 0.4s ease;
+    }
+    

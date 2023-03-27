@@ -10,6 +10,7 @@ const Home = () => {
         <LandingPage />
         <Models />
         <Insurance />
+        <Faq />
        
        
     </div>
