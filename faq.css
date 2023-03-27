@@ -1,0 +1,77 @@
+.faq{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+  
+}
+
+.faqs{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:2rem 20rem;
+}
+.faq-title{
+    
+    font-family: 'Kanit', sans-serif;
+    font-size:50px;
+
+    font-weight:600;
+}
+
+.frequently-asked-questions{
+    
+    font-family: 'Kanit', sans-serif;
+    font-size:50px;
+    font-weight:600;
+   
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+}
+
+.faq-description{
+    width:70%;
+    margin-bottom:2rem;
+    font-family: 'Kanit', sans-serif;
+    font-size:18px;
+    color:rgb(121, 121, 121);
+    font-weight:400;
+}
+
+.questions{
+    
+    box-shadow:1px 0px 6px 1px rgb(212, 212, 212);
+    height:60%;
+    width:60%;
+    padding:3rem;
+}
+
+.supra {
+    position:absolute;
+    
+    width:18%;
+    height:auto;
+    right:0%;
+    bottom:5%;
+    
+
+}
+
+
+@media(max-width:1300px)
+
+{  .faq{
+    flex-direction:column;
+    text-align:center;
+}
+    .faqs{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:2rem 2rem;
+    } 
+    
+}
