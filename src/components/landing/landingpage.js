@@ -1,7 +1,7 @@
 import React from 'react';
 import './landingpage.css';
-import BgVideo from '../media/bg.mp4';
-import Navbar from './navbar';
+import BgVideo from '../../media/bg.mp4';
+import Navbar from '../navbar/navbar';
 import Explore from './explore';
 
 

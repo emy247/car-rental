@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './bookNow.css';
-import './models';
+import '../models/models';
 import  { useState } from 'react';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import carsImages from './carsImages';
-import payment_methods from '../media/payment_methods.png'
+import payment_methods from '../../media/payment_methods.png'
 
 
 

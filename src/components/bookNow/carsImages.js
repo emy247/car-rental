@@ -1,5 +1,5 @@
-import sClass from '../media/s_class.png';
-import golf7 from '../media/golf7.png';
+import sClass from '../../media/s_class.png';
+import golf7 from '../../media/golf7.png';
 
 const carsImages=[
     {   id:1,

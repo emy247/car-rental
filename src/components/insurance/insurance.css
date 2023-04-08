@@ -124,6 +124,9 @@
     
 }
 
+.fa{
+    font-size:20px;
+}
 
 @media (max-width:1650px){
     .insurance{
@@ -170,9 +173,13 @@
        
         
     }
+    .cover-total{
+        width:90%;
+      
+    }
     .cover{
-        width:fit-content;
-        padding:1rem 1rem;
+        
+        padding:1rem 0rem;
         height: 15rem;
         font-size:smaller;    
         gap:1rem;
@@ -257,7 +264,8 @@
 }
 
 @media (max-width:550px)
-{
+{   
+    
     .no-insurance{
         margin-bottom:2rem;
         gap:2rem;
@@ -270,4 +278,10 @@
         
     }
 
+}
+@media (max-width:360px){
+    .cover{
+        height:fit-content;
+        gap:0.5rem;
+    }
 }

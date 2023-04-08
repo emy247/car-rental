@@ -1,9 +1,9 @@
 import './navbar.css';
 import {useState,useRef} from 'react';
-import Stars from '../media/stars.png'
-import BookNow from './bookNow';
+import Stars from '../../media/stars.png'
+import BookNow from '../bookNow/bookNow';
 import {HashLink as Link} from 'react-router-hash-link';
-import Sound from "../media/bg_music.mp3";
+import Sound from "../../media/bg_music.mp3";
 
 
 const Navbar = () => {
@@ -28,6 +28,7 @@ const Navbar = () => {
   return (
     
     <div className="navbar">
+         
 
         <div className={`menu ${open? 'pressed':''}`} onClick={()=>{setOpen(!open)}}>
             <div className="menu-bar"></div>
@@ -37,18 +38,28 @@ const Navbar = () => {
         
         <div className={`dropdown-menu ${open?'active':'inactive'}`}>
    
+              
+
+              
+
+              <Link className="home-link" to="#Home">
+              <div className="menu-item" tabIndex="0">Home</div>
+              </Link>  
+
               <Link className="about-link" to="/about">
               <div className="menu-item" tabIndex="0">About</div>
               </Link>  
 
-              <Link to="#Models" smooth>
-              <div className="menu-item" tabIndex="0">Models</div></Link>
-
               <div className="menu-item" tabIndex="0"  onClick={()=>setIsOpen(true)}>Book now</div>
               <BookNow open={isOpen} onClose={()=>setIsOpen(false)}>Modal</BookNow>
 
-              <Link to="#Contact" smooth>
+              <Link className="team-link" to="#Team" smooth>
+              <div className="menu-item" tabIndex="0" >Team</div></Link>
+
+              <Link className="locations-link" to="/locations" smooth>
               <div className="menu-item" tabIndex="0" >Contact</div></Link>
+
+              
 
               
        

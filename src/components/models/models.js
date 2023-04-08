@@ -3,7 +3,7 @@ import React from 'react'
 import cars from './models_data';
 import informations from './models_info';
 import {useState} from 'react';
-import BookNow from './bookNow';
+import BookNow from '../bookNow/bookNow';
 
 
 
@@ -115,9 +115,11 @@ const Models = () => {
   
 
   return ( 
-        <>
-        <div className="models" id="Models">
+        <div className="model-page" id="Models">
+        <h1 className="models-title">Select a car model  </h1>
 
+        <div className="models" >
+         
             <div className="select-cars">         
               <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0], setSelectedBrand("Audi A6"))}>Audi A6</button>
               <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>VW Golf 7</button>
@@ -143,7 +145,7 @@ const Models = () => {
         
        
       
-        </>
+        </div>
      
   )
 }

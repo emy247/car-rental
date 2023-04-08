@@ -1,6 +1,6 @@
-import audi from '../media/audi_a6.png';
-import golf7 from '../media/golf_7.png';
-import corolla from '../media/toyota_corolla.png';
+import audi from '../../media/audi_a6.png';
+import golf7 from '../../media/golf_7.png';
+import corolla from '../../media/toyota_corolla.png';
 
 
 const cars=[

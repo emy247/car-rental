@@ -1,15 +1,19 @@
+
 .navbar{
     width:100%;
     height:6em;
     border-bottom:2px solid white;
-    position:absolute;
-    top:0;
-    left:0;
     display:flex;
     justify-content:flex-start;
     align-items:center;
     z-index:1;
     color:white;
+    top:0;
+    left:0;
+    position:absolute;
+    
+    
+   
 }
 
 .website-title{
@@ -66,7 +70,7 @@
     width:8.5em;
     top:4em;
     right:3.5em;
-    background-color:rgba(83, 96, 214, 0.747);
+    background-color:rgba(83, 96, 214, 0.863);
     text-align:center;
     font-size:25px;
     position:fixed;  
@@ -152,6 +156,18 @@ a:active { text-decoration: none; }
     .dropdown-menu{     
         background-color:rgb(83, 96, 214);        
     }
+
+    .stars-up{
+        height:1.2rem;
+ 
+    }
+    .website-title{
+        padding-top:20rem;
+        margin:0 auto;
+        height:1rem;
+        width:15rem;
+        font-size:21px;
+    }
 }
 
 @media (max-width:520px)
@@ -161,4 +177,5 @@ a:active { text-decoration: none; }
  .dropdown-menu{
     right:1rem;
  }
+
 }

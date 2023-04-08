@@ -1,6 +1,6 @@
 import React from 'react';
 import "./faq.css";
-import Supra from "../media/supra.png";
+import Supra from "../../media/supra.png";
 import {useState} from 'react';
 import questions_answers from './questions_answers';
 
