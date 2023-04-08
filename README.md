@@ -1,5 +1,7 @@
 ## Project screenshots
-![localhost_3000_ (8)](https://user-images.githubusercontent.com/82291397/230741216-5afb070a-66df-4d04-bbe5-d537a307dab7.png)
+![project_screenshot](https://user-images.githubusercontent.com/82291397/230741381-0131490e-e956-4837-8a81-1586afc6f74e.png)
+
+
 
 ## Available Scripts
 
