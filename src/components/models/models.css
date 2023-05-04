@@ -317,7 +317,7 @@ table {
      
      }
      .select-cars{
-         width:18rem;
+         width:20rem;
          align-items:center;
          text-align:center;
          margin:0 auto;
@@ -374,6 +374,10 @@ table {
       left:50%;      
       transform: translate(-50%, -50%);
      }
+
+     .btn{
+      width:80%; 
+  }
 } 
 
 
