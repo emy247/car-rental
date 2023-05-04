@@ -21,7 +21,7 @@ const Footer = () => {
     <div className="footer">
 
       <div className="menu-map">
-                <Link className="home-link" to="/home" onClick={scrollToTop}>
+                <Link className="home-link" to="/" onClick={scrollToTop}>
                 <div className="footer-menu" tabIndex="0">Home</div>
                 </Link>  
 

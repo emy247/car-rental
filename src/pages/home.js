@@ -12,7 +12,7 @@ const Home = () => {
 
  
   return (
-    <div className="home" id="home-button" >
+    <div className="home" id="home" >
         <LandingPage />
         <Models />
         <Insurance />
