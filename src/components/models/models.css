@@ -25,7 +25,26 @@ padding-bottom:0.5rem;
     padding-bottom:10rem;
 }
 
- 
+.btn{
+    
+  background-color:rgb(233, 233, 233);
+  color:rgb(0, 0, 0);
+  width:15rem;
+  height:3rem;
+  border:solid 0;
+  font-family: 'Kanit', sans-serif;
+  font-weight:500;
+  font-size:20px;
+}
+
+.btn:focus, .btn:hover {
+  
+  background-color:rgb(83, 96, 214);
+  transition: all 0.3s ease;
+  color:white;
+  cursor:pointer;
+}
+
 .car-stats-info{
     display:flex;
     flex-direction:column; 
@@ -55,34 +74,19 @@ padding-bottom:0.5rem;
 
 .card_image{
   border-bottom:1px solid black;
+  height:17rem;
+  
+  
 }
 .card_image img{
   
   width:30em;
   height:auto;
-  
 }
 
-.btn{
-    
-    background-color:rgb(233, 233, 233);
-    color:rgb(0, 0, 0);
-    width:15rem;
-    height:3rem;
-    border:solid 0;
-    font-family: 'Kanit', sans-serif;
-    font-weight:500;
-    font-size:20px;
+.brand-name{
+  margin-bottom:2rem;
 }
-
-.btn:focus, .btn:hover {
-    
-    background-color:rgb(83, 96, 214);
-    transition: all 0.3s ease;
-    color:white;
-    cursor:pointer;
-  }
-
 
 .products{
   box-sizing: border-box;
@@ -95,9 +99,11 @@ padding-bottom:0.5rem;
     font-family: 'MonteCarlo', cursive;
     height:3rem;
     font-size:30px;
+    margin-bottom:4rem;
 }
 
 .reserve-now{
+    
     width:10rem;
     height:3rem;
     text-align:center;
@@ -105,23 +111,21 @@ padding-bottom:0.5rem;
     color:white; 
     border:solid 0;
     font-size:22px;
-    padding:3px;
     font-weight:600;
     font-family: 'Kanit', sans-serif;
+    
 }
 
 .reserve-now:hover{
     background-color: rgb(125, 138, 253);
+    cursor: pointer;
 }
-
 
 .stats{
     
     width:17rem;
     text-align:center;
 }
-
-
 
 .price-section{
  width:100%;
@@ -190,7 +194,7 @@ padding-bottom:0.5rem;
 }
 
 table {
-    margin-top:2rem;
+    margin-top:3rem;
     border-collapse: collapse; 
     text-align:center;
     font-family: 'Kanit', sans-serif;
@@ -319,17 +323,20 @@ table {
          margin:0 auto;
     } 
      .card{
-      width:75%;
+      width:90%;
       padding:0;
       margin:0 auto;
-     
      }
-
+     .card_image{
+      margin-top:3rem;
+      height:auto;
+     }
      .card img{
       width:90%;
      }
      
      .description{
+     
       font-size:20px;
      }
      .car-stats-info{
@@ -346,14 +353,26 @@ table {
      }
      .stats{
         width:15rem;
-        margin-top:2rem;
+        
         margin:0 auto;
      }
+     .car-stats-info{
+      margin-top:-5rem;
+     }
      table{
+      
         position:static;
         width:15rem;
         margin:0 auto;
+        
      
+     }
+
+     .reserve-now{
+      position:absolute;
+      bottom:2.5%;
+      left:50%;      
+      transform: translate(-50%, -50%);
      }
 } 
 

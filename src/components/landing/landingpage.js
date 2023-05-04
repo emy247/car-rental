@@ -11,7 +11,7 @@ import Explore from './explore';
   return (
     
     <>
-        <div className="landingpage">
+        <div className="landingpage" >
             <video src={BgVideo} autoPlay loop muted className="video-bg"/>
             <div className="bg-overlay"></div>
             <Navbar />

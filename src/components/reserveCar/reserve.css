@@ -1,0 +1,392 @@
+.book-now-style {
+   
+    position: fixed;
+    left:50%;
+    top:0%;
+    background-color: rgb(243, 242, 242);
+    padding: 0rem 4rem;
+    padding-bottom:10.5rem;
+    padding-top:11rem;
+    margin-top:4rem;
+    z-index: 1000;
+    transform: translate(-50%, -3%);
+    height:fit-content;
+    width: fit-content;
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    gap:1.5rem;
+    
+}
+
+.header{
+    box-sizing:border-box;
+    position:absolute;
+    background-color: rgb(83, 96, 214);
+    width:100%;
+    height:12%;
+    left:0%;
+    top:0%;
+    color:white;
+    padding:2.5rem;
+    text-align:center;
+    background-color: rgb(83, 96, 214);
+    border:solid 0;
+    font-size:2rem;
+    font-weight:500;
+    font-family: 'Kanit', sans-serif;
+    
+}
+.fa-close{
+    position:absolute;
+    top:3%;
+    right:3%;
+    color:white;
+
+}
+.fa-close:hover{
+    cursor: pointer;
+    color:rgb(204, 208, 243);
+}
+
+.date-picker{
+    display:flex;
+    flex-direction:column;
+    width:230px;
+    height:220px;
+    border-radius:10px;
+    box-shadow:0px 0px 6px 0px rgb(173, 173, 173);
+    text-align:center;
+    align-items:center;
+    background-color:white;
+    margin-left:1.4rem;
+}
+
+
+.select-car-title{
+    font-family:'Kanit', sans-serif; 
+    font-size:16px;
+    margin-top:10px;
+}
+
+.select-car{
+    font-family:'Kanit', sans-serif;
+    color:rgb(107, 107, 107);
+    margin:2px;
+    width:80%;
+    height:27px;
+    border:solid 2px;
+    border-color:rgb(83, 96, 214);
+    border-radius:5px;
+    cursor: pointer;   
+}
+
+
+.date-style-title{
+    
+    font-family:'Kanit', sans-serif;
+    font-size:15px;
+    margin-top:13px;
+}
+
+
+.date-style{
+    margin:2px;
+    
+    border:solid 2px;
+    border-color:rgb(83, 96, 214);
+    border-radius:5px;
+}
+
+.data-style:focus{
+    outline:none;
+    border-color:rgb(83, 96, 214);
+}
+
+.end-time{
+    display:flex;
+    flex-direction:row;
+    margin-left:15px;
+}
+
+.start-time{
+    display:flex;
+    flex-direction:row;
+    margin-left:15px;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width:25px;
+    padding:0px;
+    cursor:pointer;
+  }
+
+.time{
+    font-family:'Montserrat Alternates', sans-serif;
+    font-weight:800;
+    width:70px;
+    border:none;
+    text-transform:lowercase;
+    padding:0px;
+    display:flex;
+    flex-direction:column-reverse;
+    margin-left:5px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    width:27px;
+    padding:0px;
+    margin-right:10px;
+    cursor:pointer;
+  }
+
+.time:focus{
+    outline:none;
+    border:none;
+}
+
+.forms{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+}
+
+.forms-title{
+   box-sizing: border-box;
+   width:256px;
+   margin-top:8px;
+   font-size:20px;
+   font-family:'Kanit', sans-serif;   
+}
+
+.forms-input{
+    font-size:16px;
+  background-color:rgba(105, 117, 221, 0.178);
+  border-color:rgba(105, 117, 221, 0.253);
+  height:2.1rem;
+  padding:0.1rem 2rem;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+
+.phoneInput{
+    font-size:16px;
+    border:solid 2px;
+  background-color:rgba(105, 117, 221, 0.178);
+  border-color:rgba(55, 63, 134, 0.253);
+  height:2.25rem;
+  padding:0.1rem 0.65rem;
+  font-family: 'Kanit', sans-serif;
+    
+}
+
+.PhoneInputInput{
+    border:solid 1px;
+    
+    
+    font-size:16px;
+    border-style: none;
+    border: 0px;
+    font-family:'Kanit', sans-serif; 
+    background-color:rgba(105, 117, 221, 0);
+}
+
+.PhoneInputInput:focus{
+    outline:none;
+    border:none;
+}
+.PhoneInputInput:focus, .PhoneInputInput:hover
+{
+    border:solid 0px;
+}
+
+
+.car-image-card{
+   
+    width:260px;
+    margin-top:1rem;
+    
+}
+.car-image img{
+    
+    width:100%;
+    height:auto;
+    flex-wrap:wrap;
+
+}
+
+.payment{
+    
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.2rem;
+    margin-top:3.5rem;
+}
+
+.insurance-check{
+    width:15rem;
+    display:flex;
+    flex-direction:row;
+    font-size:18px;
+    font-family:'Kanit', sans-serif;
+   
+ }
+
+.insurance-check-box{
+    margin-right:10px;
+    width:21px;
+    height:21px;
+    
+}
+
+.terms-check{
+    width:15rem;
+    display:flex;
+    flex-direction:row;
+    font-size:18px;
+    font-family:'Kanit', sans-serif;
+ }
+
+.terms-check-box{
+    margin-right:10px;
+    width:21px;
+    height:21px;
+}
+
+.age-check{
+    width:15rem;
+    display:flex;
+    flex-direction:row;
+    font-size:18px;
+    font-family:'Kanit', sans-serif;
+ }
+
+ .age-check-box{
+    margin-right:10px;
+    width:21px;
+    height:21px;
+}
+
+ .cost{
+   display:flex;
+   flex-direction:row;
+   gap:30%;
+   font-size:16px;
+   font-family:'Kanit', sans-serif; 
+   width:100%;
+   margin-left:2.5rem;
+ }
+
+ .insurance1{
+   display:flex;
+   flex-direction:row;
+   gap:32.5%;
+   font-size:16px;
+   font-family:'Kanit', sans-serif; 
+   width:100%;
+   margin-left:2.5rem;
+    
+ }
+
+ .total{
+    position:absolute;
+    bottom:12%;
+    right:33%;
+    padding-top:1rem;
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+    font-size:20px;
+    font-family:'Kanit', sans-serif; 
+    align-items:center;
+
+ }
+ .total-cost-days{
+    display:flex;
+    flex-direction:row;
+   
+ }
+ 
+
+ .total-cost{
+   
+    background-color: rgb(83, 96, 214);
+    border-radius:10px;
+    color:white;
+    min-width:3rem;
+    height:30px;
+    padding:5px;
+    text-align:center;
+ }
+
+ .days{
+    color:rgb(83, 96, 214);
+ }
+ 
+.submit{ 
+    height:3rem;
+    position:absolute;
+    bottom:3%;
+    right:35%;
+    text-align:center;
+    background-color: rgb(83, 96, 214);
+    color:white; 
+    border:solid 0;
+    font-size:22px;
+    padding:0.4rem 1.5rem;
+    font-weight:500;
+    font-family: 'Kanit', sans-serif;
+    box-shadow:0px 0px 6px 0px rgb(170, 170, 170);
+    
+}
+.submit:hover{
+    background-color: rgb(125, 138, 253);
+    cursor: pointer;
+}
+
+@media (max-height:930px){
+    .book-now-style {
+   
+        margin-top:0rem;
+}
+}
+
+@media (max-width:738px){
+    .book-now-style {
+       
+        grid-template-columns:1fr;
+        overflow-y:auto;
+        height:40rem;   
+        align-items:center;   
+        padding:14.5rem 4rem;
+}
+.header{
+    height:9.5rem;
+}
+.total{
+    position:relative;
+    right:0%;
+    left:1rem;
+   
+    
+}
+
+.submit{
+    position:relative;
+    right:0%;
+
+}
+
+.payment{
+    
+    
+    margin-top:1rem;
+    
+}
+
+}

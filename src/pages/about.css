@@ -1,54 +1,205 @@
+
 .about{
-    position:absolute;
     height:100%;
     width:100%;
     font-family: 'Montserrat Alternates', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-top:20rem;
+    background: hsla(253, 88%, 10%, 1);
+
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 36%, hsla(252, 55%, 79%, 1) 62%, hsla(0, 0%, 100%, 1) 83%);
+
+    background: -moz-linear-gradient(180deg,   hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 36%, hsla(252, 55%, 79%, 1) 62%, hsla(0, 0%, 100%, 1) 83%);
+
+    background: -webkit-linear-gradient(-90deg,   hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 36%, hsla(252, 55%, 79%, 1) 62%, hsla(0, 0%, 100%, 1) 83%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C032E", endColorstr="#462D95", GradientType=1 );
+}
+
+.about-bg{
+    position: absolute;
+    object-fit: cover;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:10rem;
+    box-shadow:0px 7px 100px 5px rgb(98, 65, 190);
+ }
+ 
+
+.about-section{
     
-   
+    margin:0 auto;  
+    display:flex;
+    flex-direction:row;
+    height:35rem;
+    width:60rem;
+    background-color:rgba(255, 255, 255, 0);
+    margin-bottom:7rem; 
+    gap:2rem;
 }
 
 .about-image{
-    width:100%;
-    opacity:1;
-    position:absolute;
-    top:0%;
-    z-index:-1;
+    width:30rem;
+    height:auto;
 }
-.image-cover{
-    width:100%;
-    height:38rem;
-    background:linear-gradient(180deg,
-                        rgba(255, 255, 255, 0) 0%,
-                        rgba(255, 255, 255, 0) 25%,
-                        rgba(255, 255, 255, 0) 50%,
-                        rgba(255, 255, 255, 0.788) 75%,
-                        rgb(255, 255, 255) 100%
-    )
-}
-.about-section{
-    height:45%;
-    width:35%;
-    background-color: rgba(54, 54, 114, 0.705);
-    margin-left:4rem;
-    display:none;
+
+.about-text{
+    display:flex;
+    flex-direction:column;
 }
 
 .about-us{
-    display:none;
-    font-family: 'Kanit', sans-serif;
-    font-size:4.6rem;
-    padding-left:4.6rem;
-    padding-top:5rem;
-    color:rgb(255, 255, 255);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:3.5rem;
+    padding-left:1.8rem;
+    color:rgb(0, 0, 0);
+    margin-top:0.5rem;
+    
 }
 
 .about-description{
     font-family: 'Kanit', sans-serif;
-    font-size:21px;
-    padding:4rem;
-
-    
-    
-    color:rgb(255, 255, 255);
+    font-size:17px;
+    color:rgb(73, 73, 73);
+    text-align: justify;
+    padding-left:2rem;
+    padding-right:4.5rem;
+    margin-top:1.7rem;
 }
 
+.assets-icon{
+  width:21rem;
+  margin-left:3rem;
+  margin-top:1.2rem;
+}
+
+.assets-section{
+    display:flex;
+    flex-direction:row;
+    margin-left:3.4rem;
+    gap:3.5rem;
+    font-weight:600;
+    color:rgb(100, 100, 100);
+
+}
+h1{
+    color:black;
+}
+
+.our-team{
+    font-size:3.5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin:0 auto;
+    text-align:center;
+    width:30%;
+    padding-bottom:6rem;
+    margin-top:5rem;
+ 
+}
+
+.team-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap:2rem;
+    margin:0 10rem;
+    margin-bottom:5rem;
+    
+    
+}
+
+.member1{
+    width:20rem;
+    height:32rem;
+    background-color:rgb(255, 255, 255);
+    box-shadow:0px 0px 120px -50px rgb(78, 78, 78);
+    font-family: 'Kanit', sans-serif; 
+    text-align:center;
+    margin-bottom:5rem;
+}
+h3{
+  color:gray;
+}
+.member-image{
+    width:100%;
+    height:auto;
+    
+}
+
+@media (max-width:1300px){
+    .team-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:2rem;
+        margin:0 8rem;
+        
+    }
+
+    .about-section{
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        width:85%;
+        height:fit-content;
+    }
+    .about-cover{
+        
+        height:16rem;
+    }
+}
+
+@media (max-width:960px){
+    .team-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:2rem;
+        margin:0 3rem;
+    }
+
+}
+@media (max-width:700px){
+    .about-description{
+        padding-left:1.8rem;
+        padding-right:1.8rem;
+    }
+
+
+
+    
+}
+@media (max-width:550px){
+    .about-image{
+        width:100%;
+        height:auto;
+    }
+
+    .assets-icon{
+        width:80%;
+    }
+   
+}
+
+@media (max-width:460px){
+    .assets-section{
+        font-size:12px;   
+    }
+
+   
+}
+
+@media (max-width:380px){
+
+    .assets-section{
+        margin-left:1rem;
+    }
+    .assets-icon{
+        margin-left:1rem;
+    }
+
+    .member1{
+        width:15rem;
+        height:27rem;
+    }
+}

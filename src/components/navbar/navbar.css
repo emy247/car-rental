@@ -1,39 +1,107 @@
-
 .navbar{
     width:100%;
-    height:6em;
-    border-bottom:2px solid white;
+    height:7.1em;
+    border-bottom:2px solid rgb(255, 255, 255);
     display:flex;
-    justify-content:flex-start;
+    flex-direction:row;
     align-items:center;
     z-index:1;
-    color:white;
+    color:rgb(255, 255, 255);
     top:0;
     left:0;
     position:absolute;
+       
+}
+
+.navigation-menu{
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+    justify-content:end;
+    height:3rem;
+    gap:1rem;
+    font-size:20px;
+    font-weight:600;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding-top:1rem;
+    margin-left:auto;
+    margin-right:5rem; 
     
+
+
+}
+
+.navigation-item{
+    color:white;
+    width:6.5rem;
+}
+
+
+
+.navigation-item:focus, .navigation-item:hover{
+    border-bottom:solid 4px rgb(108, 121, 238);
+    cursor:pointer;
+    height:2.5rem;
+    text-shadow:0px 0px #ffffff;  
     
+}
+
+.sign{
+    background:rgba(255, 255, 255, 0);
+    border:1.5px solid rgb(255, 255, 255);
+    border-radius:10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:15px;
+    font-weight:600;
+    height:3.3rem;
+    margin-left:3rem;
+    margin-top:-0.75rem;
+    padding:0rem 1.3rem;
+}
+
+.in{
+    background:rgb(83, 96, 214);
+    border:0;
    
 }
 
+.sign.in:hover{
+    background:rgb(108, 121, 238);
+    cursor: pointer;
+    color:white;
+}
+
+.sign:hover{
+    background:rgba(253, 253, 253, 0.692); 
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
 .website-title{
-    padding-top:15rem;
-    margin:0 auto;
+    padding-top:1rem;
     height:5rem;
-    width:20rem;
-    text-align:center;
-    font-size:36px;
+    margin-left:4rem;
+    font-size:30px;
     font-weight:bolder;
+    white-space: nowrap;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     
 }
 
 .stars-up{
-    height:2rem;
-    width:auto;
+    height:1.6rem;
+    width:rem;
     align-content:center;
-
 }
+
+
+
 .menu{
+    display:none;
     position:fixed;
     right:4em;
     height:2em;
@@ -43,12 +111,15 @@
     justify-content:space-between;
     align-items:flex-start; 
     cursor:pointer;
+    top:2.2rem;
+    
 }
 .menu:hover{
     height:1.9em;
     width:2.8em;
     opacity:0.8;
     transition:all 0.1s ease;
+    
 }
 .menu.pressed{
  height:1.9em;
@@ -59,10 +130,10 @@
 
 .menu-bar{
     width:90%;
-    height:0.25em;
+    height:0.3em;
     background-color:rgb(255, 255, 255);
-    border-radius:1em;
-    box-shadow:0px -1px 3px 2px rgb(83, 96, 214);
+    border-radius:1.2em;
+    
 }
 .dropdown-menu{
     position:absolute;
@@ -70,10 +141,11 @@
     width:8.5em;
     top:4em;
     right:3.5em;
-    background-color:rgba(83, 96, 214, 0.863);
+    background-color:rgb(83, 96, 214);
     text-align:center;
     font-size:25px;
     position:fixed;  
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 .dropdown-menu.active{
@@ -114,21 +186,23 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+
 .fa-volume-up{
-    position:absolute;
     font-size:25px;
-    margin-left:6%;
+    bottom:10%;
+    right:3%;
     position:fixed;
     text-shadow: -1px 1px 6px rgb(81, 80, 141);
     border-radius:50%;
     background-color:rgb(83, 96, 214);
     padding:6px;
+    color:white;
 }
 
 
-
 .fa-volume-mute{
-    position:absolute;
+    bottom:10%;
+    right:3%;
     font-size:25px;
     margin-left:6%;
     text-shadow: 0px 1px 6px rgb(81, 80, 141);
@@ -136,6 +210,7 @@ a:active { text-decoration: none; }
     border-radius:50%;
     background-color:rgb(83, 96, 214);
     padding:6px;
+    color:white;
 }
 
 .fa-volume-mute:hover{
@@ -151,23 +226,20 @@ a:active { text-decoration: none; }
     text-shadow: -1px 1px 6px rgb(81, 80, 141);
 }
 
+
+@media (max-width:1000px)
+{
+    .navigation-menu{
+        display:none;
+    }
+    
+}   
 @media (max-width:900px)
 {
     .dropdown-menu{     
         background-color:rgb(83, 96, 214);        
     }
-
-    .stars-up{
-        height:1.2rem;
- 
-    }
-    .website-title{
-        padding-top:20rem;
-        margin:0 auto;
-        height:1rem;
-        width:15rem;
-        font-size:21px;
-    }
+  
 }
 
 @media (max-width:520px)

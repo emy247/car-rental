@@ -32,6 +32,93 @@ const informations=[
         transmission:"automatic",
         fuel:"Hybrid",
     }
+    ,
+
+    {
+        id:4,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+    ,
+
+    {
+        id:5,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+    ,
+
+    {
+        id:6,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+    ,
+
+    {
+        id:7,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+    ,
+
+    {
+        id:8,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+    ,
+
+    {
+        id:9,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+    ,
+
+    {
+        id:10,
+        brand:"Toyota",
+        model:"Corolla",
+        type:"Sedan",
+        year:"2019",
+        doors:"4/5",
+        transmission:"automatic",
+        fuel:"Hybrid",
+    }
+
+
+    
 
 ];
 

@@ -6,17 +6,20 @@ import Contact from "../components/contact/contact"
 import Footer from "../components/footer/footer"
 
 
+
 const Home = () => {
+
+
+ 
   return (
-    <div className="home" id="Home">
+    <div className="home" id="home-button" >
         <LandingPage />
         <Models />
         <Insurance />
         <Faq />
         <Contact />
         <Footer />
-       
-       
+
     </div>
   )
 }

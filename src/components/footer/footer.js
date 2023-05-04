@@ -1,18 +1,27 @@
 import React from 'react';
 import "./footer.css";
 import {HashLink as Link} from 'react-router-hash-link';
-import BookNow from '../bookNow/bookNow';
-import {useState} from 'react';
+import Reserve from '../reserveCar/reserve';
+import {useState, useEffect} from 'react';
 
 const Footer = () => {
   const [open,setOpen]=useState(false);
   const [isOpen,setIsOpen]=useState(false);
+  
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
 
   return (
     <div className="footer">
 
       <div className="menu-map">
-                <Link className="home-link" to="/">
+                <Link className="home-link" to="/home" onClick={scrollToTop}>
                 <div className="footer-menu" tabIndex="0">Home</div>
                 </Link>  
 
@@ -20,14 +29,11 @@ const Footer = () => {
                 <div className="footer-menu" tabIndex="0">About</div>
                 </Link>  
 
-                <div className="footer-menu" tabIndex="0"  onClick={()=>setIsOpen(true)}>Book now</div>
-                <BookNow open={isOpen} onClose={()=>setIsOpen(false)}>Modal</BookNow>
-
-                <Link className="team-link" to="/team" smooth>
-                <div className="footer-menu" tabIndex="0" >Team</div></Link>
-
                 <Link className="locations-link" to="/locations" smooth>
                 <div className="footer-menu" tabIndex="0" >Locations</div></Link>
+
+                <div className="footer-menu" tabIndex="0"  onClick={()=>setIsOpen(true)}>Reserve</div>
+                <Reserve open={isOpen} onClose={()=>setIsOpen(false)}>Modal</Reserve>
       </div>
       
       <div className="schedule">

@@ -3,7 +3,7 @@ import React from 'react'
 import cars from './models_data';
 import informations from './models_info';
 import {useState} from 'react';
-import BookNow from '../bookNow/bookNow';
+import Reserve from '../reserveCar/reserve';
 
 
 
@@ -15,7 +15,7 @@ const Models = () => {
 
   const [isOpen,setIsOpen]=useState(false);
   
-  const [selectedBrand, setSelectedBrand] = useState("0");
+  const [selectedBrand, setSelectedBrand] = useState();
   
 
 
@@ -28,11 +28,10 @@ const Models = () => {
         <h1 className="brand-name" id="brand-name">{item.name}</h1>
         <p className="description">{item.description}</p>
 
-        <button className="reserve-now" onClick={()=>{setIsOpen(true); setSelectedBrand(item.name)}}>Reserve now</button>
-       
+        <button className="reserve-now" onClick={()=>{setIsOpen(true); setSelectedBrand(item.id)}}>Reserve now</button>
         {console.log(selectedBrand)}
-        <BookNow open={isOpen} onClose={()=>setIsOpen(false)}>Modal</BookNow>
-        {isOpen && selectedBrand && <BookNow open={isOpen} onClose={()=>setIsOpen(false)} selectedCar={selectedBrand}>Modal</BookNow>}
+        <Reserve open={isOpen} onClose={()=>setIsOpen(false)}>Modal</Reserve>
+        {isOpen && selectedBrand && <Reserve open={isOpen} onClose={()=>setIsOpen(false)} selectedCar={selectedBrand}>Modal</Reserve>}
       </div>
       
    </div>
@@ -107,33 +106,34 @@ const Models = () => {
 
    
    const handleCarChange = (newCarInfo, newInfo) => {
-    
+
     setCarInfo([newCarInfo]);
     setInfo([newInfo]);
+    setSelectedBrand([newCarInfo]);
+
   };
 
   
 
   return ( 
-        <div className="model-page" id="Models">
+        <div className="model-page" id="models">
         <h1 className="models-title">Select a car model  </h1>
 
         <div className="models" >
          
             <div className="select-cars">         
-              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0], setSelectedBrand("Audi A6"))}>Audi A6</button>
-              <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>VW Golf 7</button>
-              <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>Toyota Corolla</button>
-              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
-              <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>vw golf</button>
-              <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>bmw</button>
-              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>
-              <button className="btn vw" onClick={() => handleCarChange(cars[1], informations[1])}>vw golf</button>
-              <button className="btn bmw" onClick={() => handleCarChange(cars[2], informations[2])}>bmw</button>
-              <button className="btn audi" onClick={() => handleCarChange(cars[0], informations[0])}>vw golf</button>            
+              <button className="btn" onClick={() => handleCarChange(cars[0], informations[0])}>{cars[0].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[1], informations[1])}>{cars[1].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[2], informations[2])}>{cars[2].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[3], informations[3])}>{cars[3].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[4], informations[4])}>{cars[4].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[5], informations[5])}>{cars[5].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[6], informations[6])}>{cars[6].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[7], informations[7])}>{cars[7].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[8], informations[8])}>{cars[8].name}</button>
+              <button className="btn" onClick={() => handleCarChange(cars[9], informations[9])}>{cars[9].name}</button>            
             </div>
-            
-          
+                  
             <div className="car-select">{listCars}</div>
 
             <div className="car-stats-info">

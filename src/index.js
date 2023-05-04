@@ -12,6 +12,6 @@ root.render(
          <App />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('book-now')
+  document.getElementById('reserve')
 );
 
