@@ -121,7 +121,7 @@ const Navbar = () => {
           
           <div className={`dropdown-menu ${open?'active':'inactive'}`}  >            
 
-                <Link className="home-link" to="/home">
+                <Link className="home-link" to="/">
                 <div className="menu-item" tabIndex="0">Home</div>
                 </Link>  
 

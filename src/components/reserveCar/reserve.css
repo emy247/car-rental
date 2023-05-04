@@ -361,7 +361,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
        
         grid-template-columns:1fr;
         overflow-y:auto;
-        height:40rem;   
+        height:34rem;   
         align-items:center;   
         padding:14.5rem 4rem;
 }
