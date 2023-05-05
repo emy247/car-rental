@@ -3,7 +3,7 @@
 ## Project screenshots
 ![project_screenshot](https://user-images.githubusercontent.com/82291397/230741381-0131490e-e956-4837-8a81-1586afc6f74e.png)
 
-<a href "https://all-star-rentals.vercel.app/">Live Demo Here!</a>
+<a href="https://all-star-rentals.vercel.app/"> Live Demo Here!</a>
 ## Available Scripts
 
 In the project directory, you can run:
