@@ -10,13 +10,10 @@ import Reserve from '../reserveCar/reserve';
 const Models = () => {
   
   const [carInfo, setCarInfo]=useState([cars[0]]);
-
   const [info, setInfo]=useState([informations[0]]);
-
   const [isOpen,setIsOpen]=useState(false);
-  
   const [selectedBrand, setSelectedBrand] = useState();
-  
+  const [active, setActive]=useState(cars[0]);
 
 
    const listCars=carInfo.map((item)=>
@@ -104,35 +101,27 @@ const Models = () => {
  });
 
 
-   
-   const handleCarChange = (newCarInfo, newInfo) => {
+   const handleCarChange = (newCarInfo, newInfo,car) => {
 
     setCarInfo([newCarInfo]);
     setInfo([newInfo]);
     setSelectedBrand([newCarInfo]);
-
+    setActive(car);
   };
 
   
-
   return ( 
         <div className="model-page" id="models">
         <h1 className="models-title">Select a car model  </h1>
-
         <div className="models" >
          
-            <div className="select-cars">         
-              <button className="btn" onClick={() => handleCarChange(cars[0], informations[0])}>{cars[0].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[1], informations[1])}>{cars[1].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[2], informations[2])}>{cars[2].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[3], informations[3])}>{cars[3].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[4], informations[4])}>{cars[4].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[5], informations[5])}>{cars[5].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[6], informations[6])}>{cars[6].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[7], informations[7])}>{cars[7].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[8], informations[8])}>{cars[8].name}</button>
-              <button className="btn" onClick={() => handleCarChange(cars[9], informations[9])}>{cars[9].name}</button>            
-            </div>
+        <div className="select-cars">
+          {cars.map((car, index) => (
+            <button key={index} className={`btn ${active===car?'active':''}`} onClick={() => handleCarChange(car, informations[index])}>
+              {car.name}
+            </button>
+          ))}
+        </div>
                   
             <div className="car-select">{listCars}</div>
 

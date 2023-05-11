@@ -44,7 +44,12 @@ padding-bottom:0.5rem;
   color:white;
   cursor:pointer;
 }
-
+.btn.active{
+  background-color:rgb(83, 96, 214);
+  transition: all 0.3s ease;
+  color:white;
+  cursor:pointer;
+}
 .car-stats-info{
     display:flex;
     flex-direction:column; 

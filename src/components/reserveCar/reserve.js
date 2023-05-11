@@ -33,11 +33,7 @@ const Reserve = ({open,onClose,selectedCar}) => {
   const [isChecked, setIsChecked] = useState(false);
   
   let insurancePrice=0;
-
-  if(isChecked) 
-  insurancePrice=18;
-  else 
-  insurancePrice=0;
+  
   
   if(!open) 
   return null
@@ -48,12 +44,39 @@ const Reserve = ({open,onClose,selectedCar}) => {
   function handleCheckboxChange(event) {
     setIsChecked(event.target.checked);
   }
-  
+
   let next_day=0;
+  const endDay=Number(endDate.charAt(8)+endDate.charAt(9));
+  const startDay=Number(startDate.charAt(8)+startDate.charAt(9))
+
+  const startMonth=Number(startDate.charAt(5)+startDate.charAt(6))
+  const endMonth=Number(endDate.charAt(5)+endDate.charAt(6));
+
+  let days=Math.abs(endDay-startDay+next_day);
+
+  if(isChecked) 
+  insurancePrice=Number((days*2.4).toFixed(2));
+  else 
+  insurancePrice=0;
+
+  if(endMonth<startMonth)
+  days=null;
+  
+  if(endDay>startDay&&endMonth>startMonth)
+  {days=null;
+  insurancePrice=0;}
+
+  if(endDay<startDay&&endMonth===startMonth)
+  {days=null;
+  insurancePrice=0;}
+
+  if(endDay===startDay&&endMonth===startMonth+1)
+  days=30;
+  
   if(Number(endHour.charAt(0)+endHour.charAt(1))>Number(startHour.charAt(0)+startHour.charAt(1)))
   {next_day=1;}
-  const days=Number(endDate.charAt(8)+endDate.charAt(9))-Number(startDate.charAt(8)+startDate.charAt(9))+next_day;
-  console.log(days);
+  
+  console.log('days',days);
   //console.log(next_day);
   console.log(startDate);
   console.log(startHour);
@@ -77,6 +100,19 @@ const Reserve = ({open,onClose,selectedCar}) => {
   </span>)
   )
 
+  const TotalCost=()=>{
+    return(
+    <div className="total">
+          <div className="total-cost-days"><span>Total cost for <span className="days"> {days} days:</span> </span></div>
+          <span className="total-cost">${listTotal}</span>
+    </div>)
+        
+  }
+
+  const CannotRent=()=>{
+    return (
+      <div className="total"><div className="total-cost-days">You cannot rent a car for longer than 30 days!</div></div>)
+  }
 
   const handleChange=(event)=>{
     setCurrentCar([cars[event.target.value-1]]);
@@ -138,10 +174,7 @@ const Reserve = ({open,onClose,selectedCar}) => {
           placeholder="Enter phone number *"
           value={value}
           onChange={setValue}/> 
-
-         
       </div>
-
 
       <div className="payment">
 
@@ -170,15 +203,10 @@ const Reserve = ({open,onClose,selectedCar}) => {
              <span>${insurancePrice}</span>
           </div>
 
-            
       </div>
-      
-      <div className="total">
-             <div className="total-cost-days"><span>Total cost for <span className="days"> {days} days:</span> </span>
-            </div>
-            <span className="total-cost">${listTotal}</span>
-          </div>    
           
+     {days===null?<CannotRent/>:<TotalCost/>}
+                     
       <button className="submit" onClick={onClose}>Confirm reservation</button>    
     
     </div>

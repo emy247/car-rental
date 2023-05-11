@@ -17,7 +17,6 @@ import bmw_x6_front from '../../media/bmw_x6_front.png';
 
 const cars=[
   
-
     {
         id:1,
         name:"VW Golf 7",

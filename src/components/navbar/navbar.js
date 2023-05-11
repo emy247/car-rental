@@ -117,7 +117,7 @@ const Navbar = () => {
               <div className="menu-bar" style={{backgroundColor:show? 'black':'white'}}></div>
               <div className="menu-bar" style={{backgroundColor:show? 'black':'white'}}></div>
               <div className="menu-bar" style={{backgroundColor:show? 'black':'white'}}></div>
-          </div>   
+          </div>    
           
           <div className={`dropdown-menu ${open?'active':'inactive'}`}  >            
 
