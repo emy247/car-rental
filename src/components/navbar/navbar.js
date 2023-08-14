@@ -78,11 +78,7 @@ const Navbar = () => {
         <img className="stars-up" src={Stars} alt=""></img>
         </div>   
 
-        {isPlaying ? (
-          <i className='fas fa-volume-up'  onClick={handleStopButtonClick}></i> 
-        ) : (
-          <i className='fas fa-volume-mute'  onClick={handlePlayButtonClick}></i>
-        )}
+      
 
         <div className="navigation-menu">
                  
